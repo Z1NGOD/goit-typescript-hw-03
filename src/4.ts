@@ -9,8 +9,8 @@ class Key {
 class Person {
   constructor(private key: Key) {}
 
-  getKey(): Key {
-    return this.key;
+  getKey(): number {
+    return this.key.getSignature();
   }
 }
 
